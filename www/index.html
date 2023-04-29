@@ -3,12 +3,11 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
-    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <title>ftDuino32 - ESP32 ftDuino</title>
+    <title>ftDuino32 - MicroPython/ESP32 for fischertechnik</title>
   </head>
   <body>
 
-    <nav class="demo" style="background-color: #dddddd">
+    <nav>
       <a href="#" class="brand">
 	<span>ftDuino32</span>
       </a>
@@ -16,57 +15,78 @@
       <!-- responsive-->
       <input id="bmenub" type="checkbox" class="show">
       <label for="bmenub" class="burger pseudo button">menu</label>
-      
-<!--      <div class="menu">
-	<a href="#gs" class="pseudo button">Getting started</a>
-	<a href="examples.html" class="pseudo button">Examples</a>
-	<a href="https://github.com/harbaum/ftDuinoBlue/tree/master/sketch/" class="pseudo button">Example Sketches</a>
-	<a href="https://play.google.com/store/apps/details?id=org.harbaum.ftduinoblue" class="pseudo button">Android App</a>
-      </div>
--->
     </nav>
-    
-    
-    <h1>ftDuino32 - ESP32 based Arduino for fischertechnik</h1>
-    
-    <p>The ftDuino32 is the big brother of the <a href="ftduino.de">ftDuino</a>.
-      It comes in the same form factor and is mechanically fully compatible
-    with the ftDuino.</p>
 
-    <p>The ftDuino32 is still under development. Its expected to become
-      available in 2023 in the same shops that also sell the ftDuino.</p>
-    
-    <center>     
-      <img src="./images/ftduino32.jpg" width="500" />
-      <br><h4>The ftDuino32</h4>
-    </center>
+    <div class="flex two-300">
+      
+      <div class="two-third">
+	<h2>MicroPython/ESP32 for fischertechnik</h2>
 
-    <p>The main features of the ftDuino32 are:
-      <ul>
-	<li>ESP32 based</li><ul>
-	  <li>240 Mhz dual core</li>
-	  <li>built-in WiFi and Bluetooth</li>
-	  <li>8 MB RAM</li>
-	  <li>16 MB flash memory</li>
-	  <li>color TFT display</li>
-	</ul>
-	<li>fischertechnik compatibility</li><ul>
-	  <li>Works with all modern 9V fischertechnik power supplies</li>
-	  <li>8 analog 9V fischertechnik compatible inputs I1-I8</li>
-	  <li>4 analog 9V fischertechnik compatible outputs O1-O8</li><ul>
-	    <li>Can be used as four motor outputs M1-M4</li>
-	  </ul>
-	  <li>4 fast counter inputs</li>
-	  <li>fischertechnik TX and ftDuino compatible 5V I²C</li>
-	</ul>
-	<li>Preinstalled MicroPython</li><ul>
-	  <li>Micropython based user interface</li>
-	  <li>Full compatibility with all major MicroPython IDEs</li>
-	  <li>WiFi and Bluetooth examples</li>
-	  <li>Demos and examples for fischertechnik connectivity</li>
-	</ul>	  
-      </ul>
-    </p>
+	<p>The ftDuino32 is the big brother of
+	  the <a href="http://ftduino.de">ftDuino</a>.  It comes in the same
+	  form factor and is mechanically and electically compatible
+	  with the ftDuino.</p>
+
+	<p>The ftDuino32 is currently under development. Its expected
+	  to become available in 2023 in the same shops that also sell
+	  the ftDuino.</p>
+      </div>
+      
+      <div class="third">
+	<p><img src="./images/ftduino32.jpg" style="max-width: 100%;" /></p>
+      </div>
+    </div>
+      
+    <h2>Specifications</h2>
+    
+    <div class="tabs three">
+      <input id='tab-1' type='radio' name='tabgroupB' checked />
+      <label class="pseudo button toggle" for="tab-1">System</label>
+      <input id='tab-2' type='radio' name='tabgroupB'>
+      <label class="pseudo button toggle" for="tab-2">fischertechnik</label>
+      <input id='tab-3' type='radio' name='tabgroupB'>
+      <label class="pseudo button toggle" for="tab-3">Micopython</label>
+      <div class="row">
+	
+	<div>
+	  <article class="card">
+	    <ul>
+	      <li>ESP32, 240 Mhz dual core</li>
+	      <li>Built-in WiFi and Bluetooth</li>
+	      <li>8 MB RAM</li>
+	      <li>16 MB flash memory</li>
+	      <li>Color TFT display</li>
+	    </ul>
+	  </article>
+	</div>
+	
+	<div>
+	  <article class="card">
+	    <ul>
+	      <li>Works with all modern 9V fischertechnik power supplies</li>
+	      <li>8 analog 9V fischertechnik compatible inputs I1-I8</li>
+	      <li>4 analog 9V fischertechnik compatible outputs O1-O8</li><ul>
+		<li>Can be used as four motor outputs M1-M4</li>
+	      </ul>
+	      <li>4 fast counter inputs</li>
+	      <li>fischertechnik TX and ftDuino compatible 5V I²C</li>
+	    </ul>
+	  </article>
+	</div>
+
+	<div>
+	  <article class="card">
+	    <ul>	    
+	      <li>Preinstalled customized <a href="https://docs.micropython.org/en/latest/esp32/tutorial/intro.html">ESP32 MicroPython</a></li>
+	      <li>Micropython based user interface</li>
+	      <li>Compatibile with all major MicroPython IDEs</li>
+	      <li>Pre-installed Python WiFi and Bluetooth examples</li>
+	      <li>Python examples for fischertechnik connectivity</li>
+	    </ul>	  
+	  </article>
+	</div>
+      </div>
+    </div>
     
   </body>
 </html>
