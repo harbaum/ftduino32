@@ -1,13 +1,6 @@
-/* Style the tab */
+/* style */
 body, html {
-    padding: 20px 10px 8px 8px;
-    font-family: sans-serif;
-    font-size: 12pt;
+    padding: 30px 10px 8px 8px;
     color: black;
     background: white;
 }
-
-h4 {
-    text-align: center;
-}
-
