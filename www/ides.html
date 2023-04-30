@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <title>ftDuino32 - MicroPython/ESP32 for fischertechnik</title>
+  </head>
+  <body>
+
+    <nav style="background-color: #eeeeee">
+      <a href="index.html" class="brand"><span>ftDuino32</span></a>      
+      <input id="bmenub" type="checkbox" class="show">
+      <label for="bmenub" class="burger pseudo button">menu</label>
+
+      <div class="menu">
+	<a href="http://github.com/harbaum/ftduino32" class="pseudo button icon-g">GitHub</a>
+	<a href="ides.html" class="button icon-puzzle">IDEs</a>
+      </div>
+    </nav>
+
+    <h2>Integrated Developent Environments (IDEs)</h2>
+
+    <p>In order to work with the <a href="index.html">ftDuino32</a>
+      (or any other <a href="https://micropython.org/">Micropython
+      based device</a>) you need a program running on your PC that
+      will allow you to communicate with the device and to develop and
+      run code on it. This type of program is called <b>Integrated
+      Development Environment</b> or just <b>IDE</b>.</p>
+
+    <p>There are many MicroPython IDEs and the ftDuino32 will work
+      with most of them. However, some IDEs are more complex to use
+      while others may be too basic to be able to access all features
+      of the ftDuino32. This page summarizes a few of them. Similar
+      comparisons can e.g. be
+      found <a href="https://randomnerdtutorials.com/micropython-ides-esp32-esp8266">
+	here</a>.</p>
+
+    <p>It is recommanded to start with Thonny, µPIDE or MPY-Jama</p>.
+    
+    <div class="tabs five">
+      <input id='tab-1' type='radio' name='tabgroupB' checked />
+      <label class="pseudo button toggle" for="tab-1">Thonny</label>
+      <input id='tab-2' type='radio' name='tabgroupB'>
+      <label class="pseudo button toggle" for="tab-2">µPIDE</label>
+      <input id='tab-3' type='radio' name='tabgroupB'>
+      <label class="pseudo button toggle" for="tab-3">Arduino Lab</label>
+      <input id='tab-4' type='radio' name='tabgroupB'>
+      <label class="pseudo button toggle" for="tab-4">MPY-Jama</label>
+      <input id='tab-5' type='radio' name='tabgroupB'>
+      <label class="pseudo button toggle" for="tab-5">PyCharm</label>
+      <div class="row">
+	
+	<div>
+	  <article class="card">
+	    <div>
+	      <div class="flex two">
+		<div class="two-third">
+		  <p><a href="https://thonny.org/">Thonny</a> is
+		    probably the most common IDE used for MicroPython
+		    development.</p>
+
+		  <p>Thonny doesn't specifically target MicroPython
+		    and it can be used with a local Python
+		    installation as well. To connect to the ftDuino32
+		    go to Tools > Options and select the Interpreter
+		    tab. Select the <b>MicroPython (ESP32)</b>
+		    interpreter and click <b>OK</b>.</p>
+
+		  <p>Further information on MicroPython with Thonny
+		  can e.g. be found
+		  <a href="https://randomnerdtutorials.com/getting-started-thonny-micropython-python-ide-esp32-esp8266/">here</a>.</p>
+		    
+		  
+		</div>
+		<div class="third">
+		  <img src="images/thonny.png" style="max-width: 100%;" />
+		</div>
+	      </div>
+	    </div>
+	  </article>
+	</div>
+	
+	<div>
+	  <article class="card">
+	    <div>
+	      <div class="flex two">
+		<div class="two-third">
+		  <p><a href="http://github.com/harbaum/upide">µPIDE</a>
+		    is a lightweight IDE targetting beginners. It was
+		    designed for use with the ftDuino32 but will work
+		    with most other MicroPython devices as well.</p>
+
+		  <p>µPIDE lets you work mainly on the target device
+		    and you can edit and run programs on ftDuino32
+		    with just a few clicks.</p>
+		</div>
+		<div class="third">
+		  <img src="images/upide.png"  style="max-width: 100%;" />
+		</div>
+	      </div>
+	    </div>	    
+	  </article>
+	</div>
+
+	<div>
+	  <article class="card">
+	    <div>
+	      <div class="flex two">
+		<div class="two-third">
+		  <p><a href="https://labs.arduino.cc/en/labs/micropython">Arduino
+		      Lab for MicroPython</a> is a very simple
+		      IDE.</p>
+
+		  <p>Arduino Lab for MicroPython has a limited ability
+		    to work with files on the device. It can be used
+		    to run simple Python projects on the ftDuino32 but
+		    is not suited for more complex projects.</p>
+		</div>
+		<div class="third">
+		  <img src="images/arduino_lab.png"  style="max-width: 100%;" />
+		</div>
+	      </div>
+	    </div>	    
+	  </article>
+	</div>
+
+	<div>
+	  <article class="card">
+	    <div>
+	      <div class="flex two">
+		<div class="two-third">
+		  <p><a href="https://github.com/jczic/ESP32-MPY-Jama">MPY-Jama</a>
+		    is a simple yet powerful IDE targetting specifically the ESP32
+		    running MicroPython.</p>
+
+		  <p>MPY-Jama can be used to edit and run files on the
+		    device. It additionally supports a plugin system
+		    that allows to check and configure various
+		    features of the device.</p>
+		</div>
+		<div class="third">
+		  <img src="images/mpy_jama.png"  style="max-width: 100%;" />
+		</div>
+	      </div>
+	    </div>	    
+	  </article>
+	</div>
+
+	<div>
+	  <article class="card">
+	    <div>
+	      <div class="flex two">
+		<div class="two-third">
+		  <p><a href="https://www.jetbrains.com/pycharm/">PyCharm</a>
+		    is a powerful commercial Python IDE that offers a
+		    free community version.</p>
+
+		  <p>PyCharm includes a plugin to connect to
+		    MicroPython devices.  The MicroPython integration
+		    is rather basic and allows for basic interaction
+		    with the MicroPython device. PyCharm does not
+		    officially support the ESP32, but in ESP8266 mode
+		    it can be used with the ESP32 and the ftDuino32 as
+		    well.</p>
+		</div>
+		<div class="third">
+		  <img src="images/pycharm.png"  style="max-width: 100%;" />
+		</div>
+	      </div>
+	    </div>	    
+	  </article>
+	</div>
+
+	<!-- https://codewith.mu -->
+	<!-- Mode ESP MicroPython -->
+	
+      </div>
+    </div>
+    
+  </body>
+</html>
