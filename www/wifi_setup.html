@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <title>ftDuino32 - Wifi Setup</title>
+  </head>
+  <body>
+
+    <nav style="background-color: #eeeeee">
+      <a href="index.html" class="brand"><span>ftDuino32</span></a>      
+      <input id="bmenub" type="checkbox" class="show">
+      <label for="bmenub" class="burger pseudo button">menu</label>
+
+      <div class="menu">
+	<a href="http://github.com/harbaum/ftduino32" class="pseudo button icon-g">GitHub</a>
+	<a href="ides.html" class="button icon-puzzle">IDEs</a>
+      </div>
+    </nav>
+
+    <h2>ftDuino32 - Wifi Setup</h2>
+
+    <p>The ESP32 CPU of the ftDuino32 includes WiFi capabilities and the ftDuino32
+      can be integrated into a wireless network. The use of WiFi needs to be configured
+      on the ftDuino32.</p>
+
+    <h3>Starting the WiFi Setup</h3>
+
+    <p>WiFi setup is started by launching the <tt>wifi_setup</tt>
+      application on the ftDuino32. This will temporarily start a
+      local WiFi network named <tt>ftDuino32-AP</tt>.</p>
+    
+    <img src="images/wifi_setup.jpg" style="border: 5px solid #555;" />
+
+    <h3>Accessing the local WiFi</h3>
+    
+    <p>The temporary local WiFi needs to be accessed by the device you
+      are going to use to configure WiFi. E.g. on your smartphone
+      select the WiFi network named <tt>ftDuino32-AP</tt>.</p>
+    
+    <img src="images/wifi_setup_select_ftduino32_ap.png" style="border: 5px solid #555;" />
+
+    <p>You will be notified that this network does not give you
+      internet access as it is limited to the ftDuino32 only.
+      This is ok as this network is only used during setup.</p>
+
+    <p>Once connected to the <tt>ftDuino32-AP</tt> network
+      point your browser to the address the Wifi setup applocatgion
+      on the ftDuino32 displays. In this case it's <tt>192.168.4.1</tt>.
+      So used the browser to connect to <tt>http://192.168.4.1</tt>.
+      This should result in the network config being displayed.</p>
+    
+    <img src="images/wifi_setup_enter.png" style="border: 5px solid #555;" />
+
+    <p>Select the WiFi network you are going to use with the ftDuino32
+      and enter the password of that network. Finally
+      select <tt>Submit</tt>.</p>
+
+    <p>The selected WiFi network will be submitted to the ftDuino32
+      and stored in its internal configuration.</p>
+    
+    <img src="images/wifi_setup_reboot.png" style="border: 5px solid #555;" />
+
+    <p>Once the configuration is stored, the ftDuiono32 will restart
+      and try to connect to the newly configured network. If
+      successful the IP adress given by that network will be displays
+      underneath the ftDuino32 logo.</p>
+    
+    <img src="images/wifi_setup_ip_set.jpg" style="border: 5px solid #555;" />
+
+    <p>The ftDuino32 is now integrated into your Wifi network and the
+      local network used during configuration is now being
+      disabled.</p>
+
+    <p>The ftDuino32 is now accessible from other devices in that WiFi
+      network and can itself connect to services in the internet.</p>
+    
+  </body>
+</html>
