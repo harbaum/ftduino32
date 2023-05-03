@@ -34,7 +34,7 @@
 	application on the ftDuino32. This will temporarily start a
 	local WiFi network named <tt>ftDuino32-AP</tt>.</p>
       
-      <center><img src="images/wifi_setup.jpg" style="border: 5px solid #555;" /></center>
+      <center><img src="images/wifi_setup.jpg" style="border: 5px solid #555; max-width: 100%;" /></center>
       
       <h3>Accessing the local WiFi</h3>
       
@@ -42,7 +42,7 @@
 	are going to use to configure WiFi. E.g. on your smartphone
 	select the WiFi network named <tt>ftDuino32-AP</tt>.</p>
       
-      <center><img src="images/wifi_setup_select_ftduino32_ap.png" style="border: 5px solid #555;" /></center>
+      <center><img src="images/wifi_setup_select_ftduino32_ap.png" style="border: 5px solid #555; max-width: 100%;" /></center>
       
       <p>You will be notified that this network does not give you
 	internet access as it is limited to the ftDuino32 only.
@@ -56,7 +56,7 @@
 	So used the browser to connect to <tt>http://192.168.4.1</tt>.
 	This should result in the network config being displayed.</p>
       
-      <center><img src="images/wifi_setup_enter.png" style="border: 5px solid #555;" /></center>
+      <center><img src="images/wifi_setup_enter.png" style="border: 5px solid #555; max-width: 100%;" /></center>
       
       <p>Select the WiFi network you are going to use with the ftDuino32
 	and enter the password of that network. Finally
@@ -67,14 +67,14 @@
       <p>The selected WiFi network will be submitted to the ftDuino32
 	and stored in its internal configuration.</p>
       
-      <center><img src="images/wifi_setup_reboot.png" style="border: 5px solid #555;" /></center>
+      <center><img src="images/wifi_setup_reboot.png" style="border: 5px solid #555; max-width: 100%;" /></center>
       
       <p>Once the configuration is stored, the ftDuiono32 will restart
 	and try to connect to the newly configured network. If
 	successful the IP adress given by that network will be displays
 	underneath the ftDuino32 logo.</p>
       
-      <center><img src="images/wifi_setup_ip_set.jpg" style="border: 5px solid #555;" /></center>
+      <center><img src="images/wifi_setup_ip_set.jpg" style="border: 5px solid #555; max-width: 100%;" /></center>
       
       <p>The ftDuino32 is now integrated into your Wifi network and the
 	local network used during configuration is now being
@@ -88,8 +88,16 @@
       <p>You can now test the WiFi connection by running e.g. the
 	<tt>simple_web.py</tt> demo and connecting to the IP address
 	now displayed on the ftDuino32's splash screen.</p>
-      
-      <center><img src="images/wifi_setup_simple_web.png" style="border: 5px solid #555;" /></center>
+
+      <p>Either use the IP address from the splash screen for form the
+	URL like
+	e.g. <a href="http://192.168.0.103">http://192.168.0.103</a>
+	from the screenshot depicted above. Or you can use the
+	name <a href="http://ftduino32.local">http://ftduino32.local</a>
+	as the ftDuino32
+	supports <a href="https://en.wikipedia.org/wiki/Multicast_DNS">mDNS</a>.</p>
+     
+      <center><img src="images/wifi_setup_simple_web.png" style="border: 5px solid #555; max-width: 100%;" /></center>
 
       <p>A simple web page will open that allows you to control
 	output O1 as well as the built-in LED remotely.</p>
