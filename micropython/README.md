@@ -1,6 +1,7 @@
 # ftDuino32 MicroPython
 
-MicroPython core for the ftDuino32.
+MicroPython core for the ftDuino32. The files here are used by
+[uPIDE](http://github.com/harbaum/upide) when flashing a ftDuino32.
 
 ## [ftduino32-20230504-v1.20.0.bin](ftduino32-20230504-v1.20.0.bin)
 
