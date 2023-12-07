@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "ftduino")(type "KiCad")(uri "${KIPRJMOD}/ftduino.pretty")(options "")(descr ""))
+)

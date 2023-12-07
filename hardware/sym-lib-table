@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "ftduino")(type "KiCad")(uri "${KIPRJMOD}/ftduino.kicad_sym")(options "")(descr ""))
+  (lib (name "mp1584")(type "KiCad")(uri "${KIPRJMOD}/mp1584.kicad_sym")(options "")(descr ""))
+)
